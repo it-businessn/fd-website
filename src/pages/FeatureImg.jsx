@@ -6,7 +6,8 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import img1 from "../assets/images/team/team-2.jpg";
+import featureImg from "../assets/images/team/team-2.jpg";
+
 export default function FeatureImg() {
   return (
     <Box
@@ -32,7 +33,7 @@ export default function FeatureImg() {
           pos: "absolute",
           top: 5,
           left: 0,
-          backgroundImage: `url(${img1})`,
+          backgroundImage: `url(${featureImg})`,
           filter: "blur(15px)",
         }}
         _groupHover={{
@@ -46,7 +47,7 @@ export default function FeatureImg() {
           height={230}
           width={282}
           objectFit={"cover"}
-          src={img1}
+          src={featureImg}
           alt="#"
         />
       </Box>

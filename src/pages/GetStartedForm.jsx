@@ -88,10 +88,7 @@ export default function GetStartedForm() {
         </HStack>
         <HStack>
           <FormControl>
-            <Select
-              placeholder="
-                                                How did you hear about us?"
-            >
+            <Select placeholder="How did you hear about us?">
               <option>Partnership Opportunity</option>
             </Select>
           </FormControl>

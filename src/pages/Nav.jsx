@@ -23,11 +23,12 @@ export default function Nav() {
   const { isOpen, onToggle } = useDisclosure();
   const [select, setSelect] = useState("CA");
   const onSelect = (code) => setSelect(code);
+
   return (
     <Box>
       <Flex
         display={{ base: "none", md: "flex" }}
-        bg={"#fff"}
+        bg={"brand.100"}
         minH={"60px"}
         minW={"100vw"}
         py={{ base: 2 }}
@@ -50,8 +51,8 @@ export default function Nav() {
             <Button
               fontSize={"sm"}
               display={{ base: "flex", md: "inline-flex" }}
-              bg={"#0deafb"}
-              color={"#010b2f"}
+              bg={"brand.200"}
+              color={"brand.300"}
               textTransform="uppercase"
               p={"1em"}
               variant={"primary"}
@@ -65,8 +66,8 @@ export default function Nav() {
             display={{ base: "flex", md: "inline-flex" }}
             fontSize={"sm"}
             p={"1em"}
-            bg={"#0deafb"}
-            color={"#010b2f"}
+            bg={"brand.200"}
+            color={"brand.300"}
             // _hover={{
             //     bg: "pink.300",
             // }}
@@ -76,8 +77,8 @@ export default function Nav() {
         </Stack>
       </Flex>
       <Flex
-        bg={"white"}
-        color={useColorModeValue("gray.600", "white")}
+        bg={"brand.100"}
+        color={useColorModeValue("gray.600", "brand.100")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4, md: "2em" }}
@@ -105,7 +106,7 @@ export default function Nav() {
           />
         </Flex>
         <Flex
-          bg={"#fff"}
+          bg={"brand.100"}
           flex={{ base: 1 }}
           h="60px"
           justify={{ base: "start", md: "center" }}
@@ -118,7 +119,7 @@ export default function Nav() {
               objectFit="cover"
               src={logo}
               position={"relative"}
-              alt="Dan Abramov"
+              alt=""
               bottom={{ base: "40px", lg: "2em" }}
             />
           </Link>
@@ -126,7 +127,7 @@ export default function Nav() {
           <Flex display={{ base: "none", md: "flex" }}>
             <DesktopNav />
           </Flex>
-          <Spacer />{" "}
+          <Spacer />
         </Flex>
         <Stack
           display={{ base: "none", md: "flex" }}

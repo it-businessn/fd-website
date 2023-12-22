@@ -1,19 +1,15 @@
-import AboutMain from "./AboutMain";
-import Footer from "./Footer";
-import MoreFeatures from "./MoreFeatures";
-import Nav from "./Nav";
-import TabService from "./TabService";
 import Hero from "./Hero";
+import HomeMain from "./HomeMain";
+import MoreFeatures from "./MoreFeatures";
+import TabService from "./TabService";
 
 export default function Home() {
   return (
     <>
-      <Nav />
       <Hero />
-      <AboutMain />
+      <HomeMain />
       <TabService />
       <MoreFeatures />
-      <Footer />
     </>
   );
 }

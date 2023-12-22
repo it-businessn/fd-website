@@ -81,7 +81,7 @@ export default function MoreFeatures() {
                         as={MdCheckBox}
                         w={"2em"}
                         h={"2em"}
-                        color="brand.500"
+                        color="brand.300"
                       />
                       <Text
                         fontSize={{
@@ -104,8 +104,8 @@ export default function MoreFeatures() {
                     base: "flex",
                     md: "inline-flex",
                   }}
-                  bg={"#0deafb"}
-                  color={"#010b2f"}
+                  bg={"brand.200"}
+                  color={"brand.300"}
                   textTransform="uppercase"
                   p={"1em"}
                 >
@@ -159,7 +159,7 @@ export default function MoreFeatures() {
                         as={MdCheckBox}
                         w={"2em"}
                         h={"2em"}
-                        color="brand.500"
+                        color="brand.300"
                       />
                       <Text
                         fontSize={{
@@ -182,8 +182,8 @@ export default function MoreFeatures() {
                     base: "flex",
                     md: "inline-flex",
                   }}
-                  bg={"#0deafb"}
-                  color={"#010b2f"}
+                  bg={"brand.200"}
+                  color={"brand.300"}
                   textTransform="uppercase"
                   p={"1em"}
                 >
@@ -213,8 +213,8 @@ export default function MoreFeatures() {
                     base: "flex",
                     md: "inline-flex",
                   }}
-                  bg={"#0deafb"}
-                  color={"#010b2f"}
+                  bg={"brand.200"}
+                  color={"brand.300"}
                   textTransform="uppercase"
                   p={"1em"}
                   onClick={onClose}

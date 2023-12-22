@@ -1,61 +1,62 @@
 .mySlides {
-    display: none;
+  display: none;
 }
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Caption text */
 .text {
-    color: #fff;
-    padding: 0em 1.5em;
-    position: relative;
-    bottom: 27em;
-    width: 38%;
-    text-align: left;
-    line-height: 1.1;
+  color: var(--bg);
+  padding: 0em 1.5em;
+  position: relative;
+  bottom: 27em;
+  width: 38%;
+  text-align: left;
+  line-height: 1.1;
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  color: var(--bg);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: lightgray;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--hero_active);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active {
-    background-color: #717171;
+  background-color: var(--hero_active);
 }
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .slideHeight {
-    height: 57vh;
+  height: 57vh;
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px;
-    }
+  .text {
+    font-size: 11px;
+  }
 }

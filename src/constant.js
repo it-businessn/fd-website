@@ -2,6 +2,7 @@ import cheer from "./assets/images/hero/cheer1.png";
 import hands from "./assets/images/hero/hands1.png";
 import lady from "./assets/images/hero/lady1.png";
 import main from "./assets/images/hero/main1.png";
+
 export const NAV_ITEMS = [
   {
     label: "Home",
@@ -24,6 +25,7 @@ export const NAV_ITEMS = [
     href: "/contact",
   },
 ];
+
 export const HERO_IMAGES = [
   {
     url: cheer,
@@ -50,6 +52,7 @@ export const HERO_IMAGES = [
       "Hire our partners for the precise duration you need them each month",
   },
 ];
+
 export const TABS = [
   {
     id: "Accounting",
@@ -59,7 +62,7 @@ export const TABS = [
     link: "Learn more about our Accounting solutions",
   },
   {
-    id: "IT",
+    id: "Information Technology",
     header:
       "Dial in your operations by having your departments anchored by strong team players.",
     jobTitle: [
@@ -71,18 +74,32 @@ export const TABS = [
     link: "Learn more about our IT solutions",
   },
   {
-    id: "Payroll & HR",
-    header:
-      "Dial in your operations by having your departments anchored by strong team players.",
-    jobTitle: ["Payroll Administrator", "HR Manager"],
-    link: "Learn more about our Payroll & HR solutions",
-  },
-  {
     id: "Marketing",
     header:
       "Dial in your operations by having your departments anchored by strong team players.",
     jobTitle: ["Marketing Manager", "Social Media Manager"],
     link: "Learn more about our Marketing solutions",
+  },
+  {
+    id: "AI",
+    header:
+      "Dial in your operations by having your departments anchored by strong team players.",
+    jobTitle: ["Marketing Manager", "Social Media Manager"],
+    link: "Learn more about our Marketing solutions",
+  },
+  {
+    id: "HR",
+    header:
+      "Dial in your operations by having your departments anchored by strong team players.",
+    jobTitle: ["Marketing Manager", "Social Media Manager"],
+    link: "Learn more about our Marketing solutions",
+  },
+  {
+    id: "Payroll",
+    header:
+      "Dial in your operations by having your departments anchored by strong team players.",
+    jobTitle: ["Payroll Administrator", "HR Manager"],
+    link: "Learn more about our Payroll & HR solutions",
   },
 ];
 
@@ -119,6 +136,23 @@ export const MORE_FEATURES = {
 export const SERVICE_TABS = [
   {
     id: "Accounting",
+    content: [
+      {
+        id: "CFO",
+        desc: "Optimize fiscal performance through strategic financial guidance, growth opportunity identification, risk management, insightful reporting, and sustainable growth expertise.",
+      },
+      {
+        id: "Controller",
+        desc: "Streamline financial operations with our Controller service: efficient financial management, accurate reporting, internal controls, and compliance expertise.",
+      },
+      {
+        id: "Bookeeper",
+        desc: "Simplify bookkeeping tasks with our Bookkeeper service: organized financial records, transaction tracking, reconciliations, and timely financial reports.",
+      },
+    ],
+  },
+  {
+    id: "AI",
     content: [
       {
         id: "CFO",

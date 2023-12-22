@@ -3,9 +3,11 @@ import { extendTheme } from "@chakra-ui/react";
 export const theme = extendTheme({
   colors: {
     brand: {
+      100: "#ffffff",
       200: "#0deafb",
       300: "#010b2f",
       500: "#5a13e3",
+      600: "#f1f5f8",
     },
   },
   fonts: {
@@ -13,8 +15,6 @@ export const theme = extendTheme({
     body: `'Material', sans-serif`,
   },
 });
-
-// const { Button } = chakraTheme.components;
 
 export const EMAILJS_CONFIG = {
   SERVICE_ID: "service_ytct8n2",

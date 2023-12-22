@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Box,
   Button,
@@ -14,9 +12,10 @@ import {
 import { Link } from "react-router-dom";
 import bg from "../assets/logo_white.png";
 
-export default function AboutMain() {
+export default function HomeMain() {
   const vimeoVideoUrl =
     "https://player.vimeo.com/video/896338779?h=ce7f75baf4&autoplay=1&loop=1&mute=1&app_id=58479";
+
   const VimeoPlayer = () => {
     return (
       <iframe
@@ -28,7 +27,9 @@ export default function AboutMain() {
       />
     );
   };
+
   const isMobile = window.innerWidth <= 768;
+
   const mainContent = () => (
     <>
       <VStack flex={1}>
@@ -75,8 +76,8 @@ export default function AboutMain() {
                   base: "flex",
                   md: "inline-flex",
                 }}
-                bg={"#0deafb"}
-                color={"#010b2f"}
+                bg={"brand.200"}
+                color={"brand.300"}
                 textTransform="uppercase"
                 p={"1em"}
               >
@@ -94,7 +95,7 @@ export default function AboutMain() {
 
   return (
     <Stack
-      bg={{ base: "#f1f5f8", md: "#fff" }}
+      bg={{ base: "brand.600", md: "brand.100" }}
       justifyContent="center"
       direction={{ base: "column", lg: "row" }}
     >
@@ -149,8 +150,8 @@ export default function AboutMain() {
                   base: "flex",
                   md: "inline-flex",
                 }}
-                bg={"#0deafb"}
-                color={"#010b2f"}
+                bg={"brand.200"}
+                color={"brand.300"}
                 textTransform="uppercase"
                 p={"1em"}
               >

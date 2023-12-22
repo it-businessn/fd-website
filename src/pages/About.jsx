@@ -1,27 +1,31 @@
 "use client";
 
 import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
-import Banner from "./Banner";
-import Footer from "./Footer";
-import MissionValues from "./MissionValues";
-import Nav from "./Nav";
 import { Link } from "react-router-dom";
+import Banner from "./Banner";
+import MissionValues from "./MissionValues";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const aboutCoverUrl =
+    "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
+
   return (
     <>
-      <Nav />
       <Banner title={"Our Company"} />
       <Stack minH={"50vh"} direction={{ base: "column", md: "row" }}>
         <Flex
-          p={{ base: " 2em", md: "3em 2em" }}
+          p={{ base: "2em", md: "3em 2em" }}
           flex={1}
           align={"center"}
           justify={"center"}
         >
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-              With over 100 years of ,
+              Over 100 years of
               <Text
                 position={"relative"}
                 _after={{
@@ -52,8 +56,8 @@ export default function About() {
                 <Button
                   fontSize={"xs"}
                   display={{ base: "flex", md: "inline-flex" }}
-                  bg={"#0deafb"}
-                  color={"#010b2f"}
+                  bg={"brand.200"}
+                  color={"brand.300"}
                   textTransform="uppercase"
                   p={"1em"}
                 >
@@ -64,17 +68,10 @@ export default function About() {
           </Stack>
         </Flex>
         <Flex flex={1} pt={{ base: 0, md: "3em" }}>
-          <Image
-            alt={"Login Image"}
-            objectFit={"cover"}
-            src={
-              "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            }
-          />
+          <Image alt={"Login Image"} objectFit={"cover"} src={aboutCoverUrl} />
         </Flex>
       </Stack>
       <MissionValues />
-      <Footer />
     </>
   );
 }

@@ -17,15 +17,12 @@ import { Link, useParams } from "react-router-dom";
 import { SERVICE_TABS } from "../constant";
 import Banner from "./Banner";
 import Feature from "./Feature";
-import Footer from "./Footer";
-import Nav from "./Nav";
 
 export default function Services() {
   const { id } = useParams();
   const tabIndex = SERVICE_TABS.findIndex((item) => item.id === id);
   return (
     <>
-      <Nav />
       <Banner title={"What We Offer"} />
       <Flex flex={1} align={"center"} justify={"center"} flexDir="column">
         <Stack
@@ -47,16 +44,16 @@ export default function Services() {
               textAlign="center"
               fontSize={{ base: "md", md: "2xl" }}
             >
-              We have identified three core areas we can help a business owner
-              scale without the financial, logistic and technical overhead. We
-              call this the ABC of small business
+              We’re here to help with your administration at a price point that
+              is right for your business now and as you grow. Feel all the
+              support without any unnecessary overhead.
             </Text>
             <Tabs variant="soft-rounded" defaultIndex={tabIndex}>
               <TabList
                 w={{ base: "100%", lg: "75%" }}
                 margin={{ base: "auto", md: "0 auto" }}
                 justifyContent="space-between"
-                bg="#ebe6f3"
+                bg="brand.600"
                 borderRadius="40px"
               >
                 {SERVICE_TABS.map((tab) => (
@@ -65,7 +62,7 @@ export default function Services() {
                     minW={{ base: "58px", md: "200px" }}
                     _selected={{
                       fontWeight: "bolder",
-                      color: "#fff",
+                      color: "brand.100",
                       bg: "brand.300",
                     }}
                     key={tab.id}
@@ -104,8 +101,8 @@ export default function Services() {
                 <Button
                   fontSize={"xs"}
                   display={{ base: "flex", md: "inline-flex" }}
-                  bg={"#0deafb"}
-                  color={"#010b2f"}
+                  bg={"brand.200"}
+                  color={"brand.300"}
                   textTransform="uppercase"
                   p={"1em"}
                 >
@@ -116,7 +113,6 @@ export default function Services() {
           </Stack>
         </Stack>
       </Flex>
-      <Footer />
     </>
   );
 }

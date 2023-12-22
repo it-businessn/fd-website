@@ -1,13 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  overflow-x: hidden !important;
+  --active: #5a13e3;
+  --bg: #f5f8f9;
+  --color: #eef2f6;
+  --primary: #0deafb;
+  --gradient1: rgba(16, 227, 218, 0.625109418767507);
+  --gradient2: rgba(40, 16, 227, 0.30017944677871145);
+  --hero_active: #717171;
+}
+@font-face {
+  font-family: "Material";
+  src: url("./fonts/Catamaran-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
+  font-family: Material, sans-serif !important;
+  display: flex;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+}
+.active {
+  color: var(--active);
+  font-weight: 700;
+  background-color: transparent;
+}
+input,
+textarea {
+  background: var(--bg) !important;
+  border: 1px solid var(--color) !important;
+  box-shadow: none !important;
+  width: 100% !important;
+}
+.border_feature,
+.service_bg {
+  margin: 1em;
+  padding: 2em;
+}
+.border_feature {
+  border: 1px solid var(--primary);
+}
+button#tabs[aria-selected="true"] {
+  font-weight: bolder;
+}
+.service_bg {
+  background: linear-gradient(
+    90deg,
+    var(--gradient2) 0%,
+    var(--gradient1) 100%
+  );
+  border: none;
+}
+.img_feature {
+  padding: 0;
+  background: var(--bg);
+}
+li#downshift {
+  list-style-type: none;
+}
+.country_select button {
+  color: #010b2f !important;
+  font-weight: bold;
+  cursor: pointer;
+  border: thin solid #eee !important;
+  background-color: #eee !important;
+  border-radius: 8px !important;
+}
+.country_select ul {
+  position: absolute;
+  z-index: 999999;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  background: var(--bg);
+  margin-top: 0;
+  padding: 8px 0;
+  max-height: 180px;
+  overflow: auto;
+}
+button#rfs-btn {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+}
+select:focus-visible {
+  border: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

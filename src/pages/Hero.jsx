@@ -42,7 +42,7 @@ export default function Hero() {
   }, []);
   return (
     <Box
-      bg={{ base: "#f1f5f8", md: "#fff" }}
+      bg={{ base: "brand.600", md: "brand.100" }}
       margin="0"
       position="relative"
       mt={{ base: "0", md: "8em" }}
@@ -56,7 +56,7 @@ export default function Hero() {
               h={{ base: "auto", lg: "60vh" }}
               flexDir="column"
               width={"50%"}
-              color={"#fff"}
+              color={"brand.100"}
               position={"relative"}
               lineHeight={"1.1"}
               bg={"brand.300"}
@@ -109,15 +109,11 @@ export default function Hero() {
           </HStack>
         </div>
       ))}
-      <Center
-        position="relative"
-        display={"none"}
-        // display={{ base: "none", lg: "flex" }}
-      >
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
+      <Center position="relative" display={"none"}>
+        <span className="dot" />
+        <span className="dot" />
+        <span className="dot" />
+        <span className="dot" />
       </Center>
     </Box>
   );
